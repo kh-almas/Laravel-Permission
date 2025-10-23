@@ -1,4 +1,4 @@
-# A dynamic role and permission system designed to reduce development time.
+# A dynamic role and permission system designed to reduce development time. Fully compatible with Laravel Livewire. Support for React and other stacks is in progress.
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/almas/laravel-permission.svg?style=flat-square)](https://packagist.org/packages/almas/laravel-permission)
 [![Total Downloads](https://img.shields.io/packagist/dt/almas/laravel-permission.svg?style=flat-square)](https://packagist.org/packages/almas/laravel-permission)
