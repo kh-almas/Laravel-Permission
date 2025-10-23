@@ -1,0 +1,37 @@
+-- role TABLE
+CREATE TABLE IF NOT EXISTS roles (
+    id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255),
+    slug VARCHAR(255) UNIQUE,
+    created_by BIGINT UNSIGNED NULL,
+    serial_no INT NULL,
+    created_at TIMESTAMP NULL,
+    updated_at TIMESTAMP NULL
+);
+
+-- permission TABLE
+CREATE TABLE IF NOT EXISTS permissions (
+    id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255),
+    slug VARCHAR(255) UNIQUE,
+    created_by BIGINT UNSIGNED NULL,
+    created_at TIMESTAMP NULL,
+    updated_at TIMESTAMP NULL
+);
+
+-- role_permission TABLE
+CREATE TABLE IF NOT EXISTS role_permission (
+    id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    role_id BIGINT UNSIGNED,
+    permission_id BIGINT UNSIGNED,
+    attached_by BIGINT UNSIGNED NULL
+);
+
+-- role_user TABLE
+CREATE TABLE IF NOT EXISTS role_user (
+    id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    role_id BIGINT UNSIGNED,
+    user_id BIGINT UNSIGNED,
+    attached_by BIGINT UNSIGNED NULL,
+    created_at TIMESTAMP NULL
+);
