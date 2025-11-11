@@ -57,7 +57,7 @@ Route::permission();
 ### Route Prefix Behavior
 - When using Route::permission();, the base route will be:
 ```php
-{your-app-url}/permissions
+{your-app-url}/permission
 ```
 
 - You can customize the base route prefix by passing a parameter to the Route::permission() method:
